@@ -1,11 +1,68 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>图书馆</title>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>东岭图书馆</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://cdn.amazeui.org/amazeui/2.7.2/css/amazeui.min.css"/>
+  <style>
+    .header {
+      text-align: center;
+    }
+    .header h1 {
+      font-size: 200%;
+      color: #333;
+      margin-top: 30px;
+    }
+    .header p {
+      font-size: 14px;
+    }
+  </style>
+    <style>
+        .swiper-container {
+            width: 600px;
+            height: 300px;
+        }
+    </style>
 </head>
 <body>
-<a href="index1.html">测试</a>  
-<p>hello world</p>
+
+<div class="header">
+  <div class="am-g">
+    <h1>东岭图书馆</h1>
+    <p><strong>箴言 4:20<br/>我儿，要留心听我的言词，侧耳听我的话语。</strong></p>
+  </div>
+  <hr />
+</div>
+
+<div class="am-g">
+  <div class="am-u-lg-6 am-u-md-8 am-u-sm-centered">
+    <form method="post" class="am-form">
+
+      <input type="text" name="password" id="password" value="" required placeholder="请输入登录密码">
+      <br />
+      <div class="am-cf">
+        <input style="width: 100%" type="submit" name="" value="登 录" class="am-btn am-btn-primary am-btn-xl am-fl">
+      </div>
+    </form>
+    
+    <p> &nbsp;&nbsp;<a style="font-size: 12px" data-am-modal="{target: '#my-alert'}" >不知道密码^_^?</a></p>
+  </div>
+</div>
+
+<div class="am-modal am-modal-alert" tabindex="-1" id="my-alert">
+  <div class="am-modal-dialog">
+    <div class="am-modal-hd">请添加下方微信号咨询：</div>
+    <div class="am-modal-bd">
+      ******
+    </div>
+    <div class="am-modal-footer">
+      <span class="am-modal-btn">确定</span>
+    </div>
+  </div>
+</div>
+ <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://cdn.amazeui.org/amazeui/2.7.2/js/amazeui.min.js"></script>
 </body>
+
 </html>
