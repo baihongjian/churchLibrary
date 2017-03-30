@@ -103,6 +103,10 @@
         }
         //console.log(keyWord);
         var keyObject=jF("*[bookTitle="+keyWord+"]",BookList).get();
+        if(keyObject.length==0){
+            alert('未找到该图书！请选择下拉列表中的图书！');
+            return;
+        }
         window.location.href="search.html?id="+keyObject[0].dbID;
     }
 </script>
