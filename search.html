@@ -3,8 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <meta name="viewport"
       content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0, user-scalable=1"/>
-<title>图书角</title>
-<link href="css/jPages.css" type="text/css" rel="stylesheet"/>
+<title>搜索结果</title>
 <style>
     * {
         margin: 0px;
@@ -257,13 +256,12 @@
 </div>
 
 
-<div class="tit"><b>神学类</b></div>
 <div class="filter">
     <table cellpadding="0" cellspacing="0" border="0" width="100%">
         <tbody>
         <tr>
             <td width="100%">
-                10条记录/页
+                搜索结果
             </td>
         </tr>
         </tbody>
@@ -285,12 +283,11 @@
 
 <script type="text/javascript" src="js/jfunk.js"></script>
 <script type="text/javascript" src="js/data.js"></script>
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/jPages.js"></script>
 <script>
     var url = window.location.search;
-    var id = url.substr(4)
-    var selectData=jF("*[catFlag="+id+"]",BookList).get();
+    var id = url.substr(4);
+    console.log(id);
+    var selectData=jF("*[dbID="+id+"]",BookList).get();
     //console.log(selectData);
     var temDom = "";
     for ( var i = 0; i < selectData.length; i++) {

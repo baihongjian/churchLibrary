@@ -158,6 +158,14 @@ img {
     border: 0px;
 }
 
+.searchForm input[type="button"] {
+    width: 70px;
+    height: 29px;
+    background-color: transparent;
+    color: #FFF;
+    border: 0px;
+}
+
 .swiTab {
     height: 40px;
     line-height: 40px;
